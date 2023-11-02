@@ -33,6 +33,9 @@ export const Pages: CollectionConfig = {
         }`,
       )}&secret=${process.env.PAYLOAD_PUBLIC_DRAFT_SECRET}`
     },
+    livePreview: {
+      url: 'http://localhost:3000',
+    },
     useAsTitle: 'title',
   },
   fields: [

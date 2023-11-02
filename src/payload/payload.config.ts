@@ -43,16 +43,17 @@ export default buildConfig({
       beforeDashboard: [BeforeDashboard],
       beforeLogin: [BeforeLogin],
     },
-    // livePreview: {
-    //   breakpoints: [
-    //     {
-    //       name: 'mobile',
-    //       height: 667,
-    //       label: 'Mobile',
-    //       width: 375,
-    //     },
-    //   ],
-    // },
+    livePreview: {
+      url: 'http://localhost:3000',
+      breakpoints: [
+        {
+          name: 'mobile',
+          height: 667,
+          label: 'Mobile',
+          width: 375,
+        },
+      ],
+    },
     user: Users.slug,
     webpack: (config) => ({
       ...config,
